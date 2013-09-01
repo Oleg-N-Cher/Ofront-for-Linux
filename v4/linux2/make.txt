@@ -1,0 +1,246 @@
+cp SYSTEM.h SYSTEM.h.save
+rm -f libOberon* oberon showdef ocat
+rm -f *.c *.o *.sym *.s *.h a.out core
+cp SYSTEM.h.save SYSTEM.h
+OBERON=.:../share ofront -s SYSTEM.Mod -iapx Args.Mod Console.Mod ../share/Modules.Mod Unix.Mod Kernel.Mod Files.Mod -x \
+		Reals.Mod CmdlnTexts.Mod OfrontOPM.cmdln.Mod OfrontOPS.Mod -x OfrontOPT.Mod\
+		OfrontOPC.Mod OfrontOPV.Mod OfrontOPB.Mod OfrontOPP.Mod \
+		OfrontCmd.Mod -m BrowserCmd.Mod -m OCatCmd.Mod -m
+SYSTEM.Mod  translating SYSTEM  extended symbol file    19761
+Args.Mod  translating Args  new symbol file    1640
+Console.Mod  translating Console  new symbol file    2482
+../share/Modules.Mod  translating Modules  new symbol file    3814
+Unix.Mod  translating Unix  new symbol file    6729
+Kernel.Mod  translating Kernel  new symbol file    3916
+Files.Mod  translating Files
+  pos 17960  warning 301  
+  pos 18101  warning 301  
+  pos 19435  warning 301  
+  pos 19575  warning 301    new symbol file    23090
+Reals.Mod  translating Reals
+  pos  2378  warning 301  
+  pos  2474  warning 301    new symbol file    2969
+CmdlnTexts.Mod  translating CmdlnTexts  new symbol file    45465
+OfrontOPM.cmdln.Mod  translating OfrontOPM  new symbol file    25142
+OfrontOPS.Mod  translating OfrontOPS  new symbol file    12252
+OfrontOPT.Mod  translating OfrontOPT  new symbol file    47161
+OfrontOPC.Mod  translating OfrontOPC  new symbol file    50553
+OfrontOPV.Mod  translating OfrontOPV  new symbol file    40282
+OfrontOPB.Mod  translating OfrontOPB  new symbol file    60303
+OfrontOPP.Mod  translating OfrontOPP  new symbol file    46014
+OfrontCmd.Mod  translating OfrontCmd  main program    2975
+BrowserCmd.Mod  translating BrowserCmd  main program    14005
+OCatCmd.Mod  translating OCatCmd  main program    2086
+cc  -c \
+		SYSTEM.c Args.c Console.c Modules.c Unix.c Kernel.c Files.c Reals.c CmdlnTexts.c \
+		OfrontOPM.c OfrontOPS.c OfrontOPT.c OfrontOPC.c OfrontOPV.c OfrontOPB.c OfrontOPP.c
+In file included from SYSTEM.c:15:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+SYSTEM.c:22: warning: conflicting types for built-in function 'malloc'
+SYSTEM.c:23: warning: conflicting types for built-in function 'exit'
+In file included from Args.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Console.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Modules.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Unix.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Kernel.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Files.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Reals.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from CmdlnTexts.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPM.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPS.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPT.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPC.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPV.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPB.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from OfrontOPP.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+cc  \
+		OfrontCmd.c -o ofront \
+		SYSTEM.o Args.o Console.o Modules.o Unix.o Kernel.o Files.o Reals.o CmdlnTexts.o \
+		OfrontOPM.o OfrontOPS.o OfrontOPT.o OfrontOPC.o OfrontOPV.o OfrontOPB.o OfrontOPP.o
+In file included from OfrontCmd.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+OfrontCmd.c: In function 'OfrontCmd_Trap':
+OfrontCmd.c:29: warning: incompatible implicit declaration of built-in function 'exit'
+OfrontCmd.c:35: warning: incompatible implicit declaration of built-in function 'exit'
+OfrontCmd.c: In function 'OfrontCmd_Translate':
+OfrontCmd.c:100: warning: incompatible implicit declaration of built-in function 'exit'
+cc  \
+		BrowserCmd.c -o showdef \
+		SYSTEM.o Args.o Console.o Modules.o Unix.o Kernel.o Files.o Reals.o CmdlnTexts.o \
+		OfrontOPM.o OfrontOPS.o OfrontOPT.o OfrontOPV.o OfrontOPC.o
+In file included from BrowserCmd.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+cc  \
+		OCatCmd.c -o ocat \
+		SYSTEM.o Args.o Console.o Modules.o Unix.o Kernel.o Files.o Reals.o CmdlnTexts.o
+In file included from OCatCmd.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+OBERON=.:../share ofront -s \
+		OfrontOPC.Mod
+OfrontOPC.Mod  translating OfrontOPC    50553
+OBERON=.:../share ofront -s \
+		Modules.Mod X11.Mod Display.Mod  \
+		Input.Mod Math.Mod MathL.Mod Fonts.Mod Viewers.Mod \
+		Texts.Mod Oberon.Mod MenuViewers.Mod TextFrames.Mod \
+		In.Mod Out.Mod Printer.Mod TextPrinter.Mod ParcElems.Mod \
+		System.Mod Edit.Mod EdiT.Mod EditTools.Mod MenuElems.Mod IconElems.Mod \
+		ClockElems.Mod TextPFrames.Mod TextPreview.Mod \
+		TableElems.Mod  StyleElems.Mod FoldElems.Mod Folds.Mod ErrorElems.Mod \
+		ChartElems.Mod LineElems.Mod PopupElems.Mod StampElems.Mod \
+		AsciiCoder.Mod Miscellaneous.Mod FKeys.Mod \
+		Colors.Mod FontToBDF.Mod \
+		Types.Mod Display1.Mod KeplerPorts.Mod KeplerGraphs.Mod \
+		KeplerFrames.Mod Kepler.Mod Kepler1.Mod Kepler2.Mod Kepler4.Mod \
+		Kepler5.Mod Kepler6.Mod Kepler7.Mod Kepler8.Mod Kepler9.Mod \
+		KeplerElems.Mod Mailer.Mod
+Modules.Mod  translating Modules  extended symbol file    8204
+X11.Mod  translating X11  new symbol file    32615
+Display.Mod  translating Display  new symbol file    19680
+Input.Mod  translating Input  new symbol file    12221
+Math.Mod  translating Math  new symbol file    919
+MathL.Mod  translating MathL  new symbol file    909
+Fonts.Mod  translating Fonts  new symbol file    7861
+Viewers.Mod  translating Viewers  new symbol file    10131
+Texts.Mod  translating Texts  new symbol file    42112
+Oberon.Mod  translating Oberon  new symbol file    18526
+MenuViewers.Mod  translating MenuViewers  new symbol file    10986
+TextFrames.Mod  translating TextFrames  new symbol file    71683
+In.Mod  translating In  new symbol file    2638
+Out.Mod  translating Out  new symbol file    1703
+Printer.Mod  translating Printer  new symbol file    43799
+TextPrinter.Mod  translating TextPrinter  new symbol file    27788
+ParcElems.Mod  translating ParcElems  new symbol file    30464
+System.Mod  translating System  new symbol file    24251
+Edit.Mod  translating Edit  new symbol file    27588
+EdiT.Mod not found
+cc  -c \
+		Modules.c X11.c Display.c \
+		Input.c Math.c MathL.c Fonts.c Viewers.c \
+		Texts.c Oberon.c MenuViewers.c TextFrames.c \
+		In.c Out.c Printer.c TextPrinter.c ParcElems.c System.c  \
+		Edit.c EdiT.c EditTools.c MenuElems.c IconElems.c ClockElems.c \
+		TableElems.c StyleElems.c FoldElems.c Folds.c ErrorElems.c \
+		ChartElems.c LineElems.c PopupElems.c StampElems.c\
+		AsciiCoder.c Miscellaneous.c FKeys.c \
+		TextPFrames.c TextPreview.c Colors.c FontToBDF.c \
+		Types.c Display1.c KeplerPorts.c KeplerGraphs.c \
+		KeplerFrames.c Kepler.c Kepler1.c Kepler2.c Kepler4.c \
+		Kepler5.c Kepler6.c Kepler7.c Kepler8.c Kepler9.c KeplerElems.c Mailer.c
+cc: EdiT.c: No such file or directory
+cc: EditTools.c: No such file or directory
+cc: MenuElems.c: No such file or directory
+cc: IconElems.c: No such file or directory
+cc: ClockElems.c: No such file or directory
+cc: TableElems.c: No such file or directory
+cc: StyleElems.c: No such file or directory
+cc: FoldElems.c: No such file or directory
+cc: Folds.c: No such file or directory
+cc: ErrorElems.c: No such file or directory
+cc: ChartElems.c: No such file or directory
+cc: LineElems.c: No such file or directory
+cc: PopupElems.c: No such file or directory
+cc: StampElems.c: No such file or directory
+cc: AsciiCoder.c: No such file or directory
+cc: Miscellaneous.c: No such file or directory
+cc: FKeys.c: No such file or directory
+cc: TextPFrames.c: No such file or directory
+cc: TextPreview.c: No such file or directory
+cc: Colors.c: No such file or directory
+cc: FontToBDF.c: No such file or directory
+cc: Types.c: No such file or directory
+cc: Display1.c: No such file or directory
+cc: KeplerPorts.c: No such file or directory
+cc: KeplerGraphs.c: No such file or directory
+cc: KeplerFrames.c: No such file or directory
+cc: Kepler.c: No such file or directory
+cc: Kepler1.c: No such file or directory
+cc: Kepler2.c: No such file or directory
+cc: Kepler4.c: No such file or directory
+cc: Kepler5.c: No such file or directory
+cc: Kepler6.c: No such file or directory
+cc: Kepler7.c: No such file or directory
+cc: Kepler8.c: No such file or directory
+cc: Kepler9.c: No such file or directory
+cc: KeplerElems.c: No such file or directory
+cc: Mailer.c: No such file or directory
+In file included from Modules.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from X11.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+X11.c: In function 'X11_NewPattern':
+X11.c:334: warning: incompatible implicit declaration of built-in function 'malloc'
+X11.c: In function 'X11_OpenDisp':
+X11.c:543: warning: incompatible implicit declaration of built-in function 'exit'
+X11.c: In function 'X11_CreateColors':
+X11.c:655: warning: incompatible implicit declaration of built-in function 'exit'
+X11.c: In function 'X11_CreateGc':
+X11.c:689: warning: incompatible implicit declaration of built-in function 'exit'
+X11.c: In function 'X11_MyIOErrorHandler':
+X11.c:807: warning: incompatible implicit declaration of built-in function 'exit'
+In file included from Display.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+Display.c: In function 'Display_CreateGcs':
+Display.c:538: warning: incompatible implicit declaration of built-in function 'exit'
+Display.c:549: warning: incompatible implicit declaration of built-in function 'exit'
+In file included from Input.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Math.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from MathL.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Fonts.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+Fonts.c: In function 'Fonts_Init':
+Fonts.c:287: warning: incompatible implicit declaration of built-in function 'exit'
+In file included from Viewers.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Texts.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Oberon.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from MenuViewers.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from TextFrames.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from In.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Out.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from Printer.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from TextPrinter.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+TextPrinter.c: In function 'TextPrinter_DX':
+TextPrinter.c:216: warning: comparison is always true due to limited range of data type
+TextPrinter.c: In function 'TextPrinter_Get':
+TextPrinter.c:230: warning: comparison is always true due to limited range of data type
+TextPrinter.c: In function 'TextPrinter_GetChar':
+TextPrinter.c:246: warning: comparison is always true due to limited range of data type
+TextPrinter.c: In function 'TextPrinter_Width':
+TextPrinter.c:267: warning: comparison is always true due to limited range of data type
+TextPrinter.c: In function 'TextPrinter_GetPrintChar':
+TextPrinter.c:285: warning: comparison is always true due to limited range of data type
+In file included from ParcElems.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+In file included from System.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+System.c: In function 'System_Trap':
+System.c:88: warning: incompatible implicit declaration of built-in function 'exit'
+In file included from Edit.c:2:
+SYSTEM.h:16: warning: conflicting types for built-in function 'memcpy'
+make: *** [cclib] Error 1

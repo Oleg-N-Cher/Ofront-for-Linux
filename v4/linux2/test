@@ -1,0 +1,2261 @@
+# 1 "KeplerPorts.c"
+ 
+# 1 "SYSTEM.h" 1
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/alloca.h" 1 3
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/features.h" 1 3
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+# 138 "/usr/include/features.h" 3
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 196 "/usr/include/features.h" 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+# 1 "/usr/include/sys/cdefs.h" 1 3
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+# 71 "/usr/include/sys/cdefs.h" 3
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+# 103 "/usr/include/sys/cdefs.h" 3
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+# 250 "/usr/include/features.h" 2 3
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+# 1 "/usr/include/gnu/stubs.h" 1 3
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 278 "/usr/include/features.h" 2 3
+
+
+
+
+# 22 "/usr/include/alloca.h" 2 3
+
+
+
+# 1 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 1 3
+
+
+
+
+
+
+ 
+
+
+# 19 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+# 61 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+# 131 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+# 271 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+# 283 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+ 
+
+ 
+
+# 317 "/usr/lib/gcc-lib/i386-linux/2.95.2/include/stddef.h" 3
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 25 "/usr/include/alloca.h" 2 3
+
+
+ 
+
+ 
+
+
+ 
+extern void *  alloca  (size_t __size)    ;
+
+
+
+
+
+ 
+
+
+# 14 "SYSTEM.h" 2
+
+
+extern char *memcpy();
+
+
+
+
+ 
+
+
+
+
+ 
+typedef char BOOLEAN;
+typedef unsigned char CHAR;
+typedef signed char SHORTINT;
+typedef short int INTEGER;
+typedef long LONGINT;
+typedef float REAL;
+typedef double LONGREAL;
+typedef unsigned long SET;
+typedef void *SYSTEM_PTR;
+typedef unsigned char SYSTEM_BYTE;
+
+ 
+extern long SYSTEM_DIV();
+extern long SYSTEM_MOD();
+extern long SYSTEM_ENTIER();
+extern long SYSTEM_ASH();
+extern long SYSTEM_ABS();
+extern long SYSTEM_XCHK();
+extern long SYSTEM_RCHK();
+extern double SYSTEM_ABSD();
+extern SYSTEM_PTR SYSTEM_NEWREC();
+extern SYSTEM_PTR SYSTEM_NEWBLK();
+
+extern SYSTEM_PTR SYSTEM_NEWARR(long*, long, int, int, int, ...);
+
+
+
+extern SYSTEM_PTR SYSTEM_REGMOD();
+extern void SYSTEM_INCREF();
+extern void SYSTEM_REGCMD();
+extern void SYSTEM_REGTYP();
+extern void SYSTEM_REGFIN();
+extern void SYSTEM_FINALL();
+extern void SYSTEM_INIT();
+extern void SYSTEM_FINI();
+extern void SYSTEM_HALT();
+extern void SYSTEM_INHERIT();
+extern void SYSTEM_ENUMP();
+extern void SYSTEM_ENUMR();
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+static int __STRCMP(x, y)
+	CHAR *x, *y;
+{long i = 0; CHAR ch1, ch2;
+	do {ch1 = x[i]; ch2 = y[i]; i++;
+		if (!ch1) return -(int)ch2;
+	} while (ch1==ch2);
+	return (int)ch1 - (int)ch2;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+# 158 "SYSTEM.h"
+
+
+
+
+
+
+
+
+
+# 175 "SYSTEM.h"
+
+ 
+
+
+
+ 
+extern LONGINT SYSTEM_argc;
+extern LONGINT SYSTEM_argv;
+extern void (*SYSTEM_Halt)();
+extern LONGINT SYSTEM_halt;
+extern LONGINT SYSTEM_assert;
+extern SYSTEM_PTR SYSTEM_modules;
+extern LONGINT SYSTEM_heapsize;
+extern LONGINT SYSTEM_allocated;
+extern LONGINT SYSTEM_lock;
+extern SHORTINT SYSTEM_gclock;
+extern BOOLEAN SYSTEM_interrupted;
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2 "KeplerPorts.c" 2
+
+# 1 "Display.h" 1
+ 
+
+
+
+
+
+
+typedef
+	struct Display_Bytes {
+		char _prvt0[1];
+	} Display_Bytes;
+
+typedef
+	Display_Bytes *Display_Font;
+
+typedef
+	struct Display_FrameDesc *Display_Frame;
+
+typedef
+	void (*Display_Handler)();
+
+typedef
+	struct Display_FrameDesc {
+		Display_Frame dsc, next;
+		INTEGER X, Y, W, H;
+		Display_Handler handle;
+	} Display_FrameDesc;
+
+typedef
+	struct Display_FrameMsg {
+		char _prvt0[1];
+	} Display_FrameMsg;
+
+
+extern INTEGER Display_Bottom, Display_Left, Display_Width, Display_Height, Display_ColLeft, Display_UBottom;
+extern LONGINT Display_Unit, Display_primary, Display_secondary, Display_arrow, Display_cross, Display_star, Display_hook, Display_downArrow, Display_grey0, Display_grey1, Display_grey2, Display_ticks;
+
+extern long *Display_FrameMsg__typ;
+extern long *Display_FrameDesc__typ;
+extern long *Display_Bytes__typ;
+
+extern void Display_CopyBlock();
+extern void Display_CopyBlockC();
+extern void Display_CopyPattern();
+extern void Display_CopyPatternC();
+extern void Display_Dot();
+extern void Display_DotC();
+extern void Display_GetChar();
+extern void Display_GetColor();
+extern LONGINT Display_Map();
+extern LONGINT Display_NewPattern();
+extern void Display_ReplConst();
+extern void Display_ReplConstC();
+extern void Display_ReplPattern();
+extern void Display_ReplPatternC();
+extern void Display_SetColor();
+extern void Display_SetMode();
+extern void *Display__init();
+
+
+
+# 3 "KeplerPorts.c" 2
+
+# 1 "Display1.h" 1
+ 
+
+
+
+
+
+
+
+
+
+extern void Display1_Circle();
+extern void Display1_Ellipse();
+extern void Display1_GetPatternSize();
+extern void Display1_Line();
+extern LONGINT Display1_ThisPattern();
+extern void *Display1__init();
+
+
+
+# 4 "KeplerPorts.c" 2
+
+# 1 "Fonts.h" 1
+ 
+
+
+
+
+
+
+
+typedef
+	struct Fonts_FontDesc *Fonts_Font;
+
+typedef
+	CHAR Fonts_Name[32];
+
+typedef
+	struct Fonts_FontDesc {
+		Fonts_Name name;
+		INTEGER height, minX, maxX, minY, maxY;
+		Display_Font raster;
+		char _prvt0[4];
+	} Fonts_FontDesc;
+
+
+extern Fonts_Font Fonts_Default;
+
+extern long *Fonts_FontDesc__typ;
+
+extern Fonts_Font Fonts_This();
+extern void *Fonts__init();
+
+
+
+# 5 "KeplerPorts.c" 2
+
+# 1 "Printer.h" 1
+ 
+
+
+
+
+
+
+
+extern INTEGER Printer_res, Printer_PageWidth, Printer_PageHeight;
+
+
+extern void Printer_Circle();
+extern void Printer_Close();
+extern void Printer_ContString();
+extern void Printer_Ellipse();
+extern void Printer_Line();
+extern void Printer_Open();
+extern void Printer_Page();
+extern void Printer_Picture();
+extern void Printer_ReplConst();
+extern void Printer_ReplPattern();
+extern void Printer_Spline();
+extern void Printer_String();
+extern void Printer_UseColor();
+extern void Printer_UseListFont();
+extern void *Printer__init();
+
+
+
+# 6 "KeplerPorts.c" 2
+
+# 1 "TextPrinter.h" 1
+ 
+
+
+
+
+
+
+# 1 "Texts.h" 1
+ 
+
+
+
+
+
+# 1 "Files.h" 1
+ 
+
+
+
+
+
+
+typedef
+	struct Files_Handle *Files_File;
+
+typedef
+	struct Files_Handle {
+		char _prvt0[216];
+		LONGINT fd;
+		char _prvt1[28];
+	} Files_Handle;
+
+typedef
+	struct Files_Rider {
+		LONGINT res;
+		BOOLEAN eof;
+		char _prvt0[15];
+	} Files_Rider;
+
+
+
+extern long *Files_Handle__typ;
+extern long *Files_Rider__typ;
+
+extern Files_File Files_Base();
+extern void Files_ChangeDirectory();
+extern void Files_Close();
+extern void Files_Delete();
+extern void Files_GetDate();
+extern LONGINT Files_Length();
+extern Files_File Files_New();
+extern Files_File Files_Old();
+extern LONGINT Files_Pos();
+extern void Files_Purge();
+extern void Files_Read();
+extern void Files_ReadBool();
+extern void Files_ReadBytes();
+extern void Files_ReadInt();
+extern void Files_ReadLInt();
+extern void Files_ReadLReal();
+extern void Files_ReadNum();
+extern void Files_ReadReal();
+extern void Files_ReadSet();
+extern void Files_ReadString();
+extern void Files_Register();
+extern void Files_Rename();
+extern void Files_Set();
+extern void Files_Write();
+extern void Files_WriteBool();
+extern void Files_WriteBytes();
+extern void Files_WriteInt();
+extern void Files_WriteLInt();
+extern void Files_WriteLReal();
+extern void Files_WriteNum();
+extern void Files_WriteReal();
+extern void Files_WriteSet();
+extern void Files_WriteString();
+extern void *Files__init();
+
+
+
+# 7 "Texts.h" 2
+
+
+
+typedef
+	struct Texts_BufDesc {
+		LONGINT len;
+		char _prvt0[4];
+	} Texts_BufDesc;
+
+typedef
+	Texts_BufDesc *Texts_Buffer;
+
+typedef
+	struct Texts_ElemMsg {
+		char _prvt0[1];
+	} Texts_ElemMsg;
+
+typedef
+	struct Texts_ElemDesc *Texts_Elem;
+
+typedef
+	struct Texts_CopyMsg {  
+		Texts_Elem e;
+	} Texts_CopyMsg;
+
+typedef
+	struct Texts_RunDesc {
+		LONGINT _prvt0;
+		char _prvt1[15];
+	} Texts_RunDesc;
+
+typedef
+	void (*Texts_Handler)();
+
+typedef
+	struct Texts_ElemDesc {
+		char _prvt0[20];
+		LONGINT W, H;
+		Texts_Handler handle;
+		char _prvt1[4];
+	} Texts_ElemDesc;
+
+typedef
+	struct Texts_FileMsg {  
+		INTEGER id;
+		LONGINT pos;
+		Files_Rider r;
+	} Texts_FileMsg;
+
+typedef
+	struct Texts_IdentifyMsg {  
+		CHAR mod[32], proc[32];
+	} Texts_IdentifyMsg;
+
+typedef
+	void (*Texts_Notifier)();
+
+typedef
+	struct Texts_Reader {
+		BOOLEAN eot;
+		Fonts_Font fnt;
+		SHORTINT col, voff;
+		Texts_Elem elem;
+		char _prvt0[32];
+	} Texts_Reader;
+
+typedef
+	struct Texts_Scanner {  
+		BOOLEAN eot;
+		Fonts_Font fnt;
+		SHORTINT col, voff;
+		Texts_Elem elem;
+		char _prvt0[32];
+		CHAR nextCh;
+		INTEGER line, class;
+		LONGINT i;
+		REAL x;
+		LONGREAL y;
+		CHAR c;
+		SHORTINT len;
+		CHAR s[64];
+	} Texts_Scanner;
+
+typedef
+	struct Texts_TextDesc *Texts_Text;
+
+typedef
+	struct Texts_TextDesc {
+		LONGINT len;
+		Texts_Notifier notify;
+		char _prvt0[12];
+	} Texts_TextDesc;
+
+typedef
+	struct Texts_Writer {
+		Texts_Buffer buf;
+		Fonts_Font fnt;
+		SHORTINT col, voff;
+		char _prvt0[26];
+	} Texts_Writer;
+
+
+extern Texts_Elem Texts_new;
+
+extern long *Texts_RunDesc__typ;
+extern long *Texts_ElemMsg__typ;
+extern long *Texts_ElemDesc__typ;
+extern long *Texts_FileMsg__typ;
+extern long *Texts_CopyMsg__typ;
+extern long *Texts_IdentifyMsg__typ;
+extern long *Texts_BufDesc__typ;
+extern long *Texts_TextDesc__typ;
+extern long *Texts_Reader__typ;
+extern long *Texts_Scanner__typ;
+extern long *Texts_Writer__typ;
+
+extern void Texts_Append();
+extern void Texts_ChangeLooks();
+extern void Texts_Close();
+extern void Texts_Copy();
+extern void Texts_CopyElem();
+extern void Texts_Delete();
+extern Texts_Text Texts_ElemBase();
+extern LONGINT Texts_ElemPos();
+extern void Texts_Insert();
+extern void Texts_Load();
+extern void Texts_Open();
+extern void Texts_OpenBuf();
+extern void Texts_OpenReader();
+extern void Texts_OpenScanner();
+extern void Texts_OpenWriter();
+extern LONGINT Texts_Pos();
+extern void Texts_Read();
+extern void Texts_ReadElem();
+extern void Texts_ReadPrevElem();
+extern void Texts_Recall();
+extern void Texts_Save();
+extern void Texts_Scan();
+extern void Texts_SetColor();
+extern void Texts_SetFont();
+extern void Texts_SetOffset();
+extern void Texts_Store();
+extern void Texts_Write();
+extern void Texts_WriteDate();
+extern void Texts_WriteElem();
+extern void Texts_WriteHex();
+extern void Texts_WriteInt();
+extern void Texts_WriteLn();
+extern void Texts_WriteLongReal();
+extern void Texts_WriteLongRealHex();
+extern void Texts_WriteReal();
+extern void Texts_WriteRealFix();
+extern void Texts_WriteRealHex();
+extern void Texts_WriteString();
+extern void *Texts__init();
+
+
+
+# 8 "TextPrinter.h" 2
+
+
+typedef
+	struct TextPrinter_PrintMsg {  
+		BOOLEAN prepare;
+		LONGINT indent;
+		Fonts_Font fnt;
+		SHORTINT col;
+		LONGINT pos;
+		INTEGER X0, Y0, pno;
+	} TextPrinter_PrintMsg;
+
+
+
+extern long *TextPrinter_PrintMsg__typ;
+
+extern LONGINT TextPrinter_DX();
+extern Fonts_Font TextPrinter_Font();
+extern SHORTINT TextPrinter_FontNo();
+extern void TextPrinter_Get();
+extern void TextPrinter_GetChar();
+extern void TextPrinter_InitFonts();
+extern void TextPrinter_PlaceBody();
+extern void TextPrinter_PlaceHeader();
+extern void TextPrinter_PrintDraft();
+extern void *TextPrinter__init();
+
+
+
+# 7 "KeplerPorts.c" 2
+
+
+typedef
+	struct KeplerPorts_BalloonPortDesc *KeplerPorts_BalloonPort;
+
+typedef
+	struct KeplerPorts_PortDesc *KeplerPorts_Port;
+
+typedef
+	struct KeplerPorts_PortDesc {  
+		Display_Frame dsc, next;
+		INTEGER X, Y, W, H;
+		Display_Handler handle;
+		INTEGER x0, y0, scale;
+		KeplerPorts_Port ext;
+	} KeplerPorts_PortDesc;
+
+INTEGER KeplerPorts_Port_CX();
+INTEGER KeplerPorts_Port_CY();
+INTEGER KeplerPorts_Port_Cx();
+INTEGER KeplerPorts_Port_Cy();
+void KeplerPorts_Port_DrawCircle();
+void KeplerPorts_Port_DrawEllipse();
+void KeplerPorts_Port_DrawLine();
+void KeplerPorts_Port_DrawRect();
+void KeplerPorts_Port_DrawString();
+void KeplerPorts_Port_FillCircle();
+void KeplerPorts_Port_FillQuad();
+void KeplerPorts_Port_FillRect();
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef
+	struct KeplerPorts_BalloonPortDesc {  
+		Display_Frame dsc, next;
+		INTEGER X, Y, W, H;
+		Display_Handler handle;
+		INTEGER x0, y0, scale;
+		KeplerPorts_Port ext;
+	} KeplerPorts_BalloonPortDesc;
+
+void KeplerPorts_BalloonPort_DrawCircle();
+void KeplerPorts_BalloonPort_DrawEllipse();
+void KeplerPorts_BalloonPort_DrawLine();
+void KeplerPorts_BalloonPort_DrawRect();
+void KeplerPorts_BalloonPort_DrawString();
+void KeplerPorts_BalloonPort_FillCircle();
+void KeplerPorts_BalloonPort_FillQuad();
+void KeplerPorts_BalloonPort_FillRect();
+
+typedef
+	struct KeplerPorts_DisplayPortDesc *KeplerPorts_DisplayPort;
+
+typedef
+	struct KeplerPorts_DisplayPortDesc {  
+		Display_Frame dsc, next;
+		INTEGER X, Y, W, H;
+		Display_Handler handle;
+		INTEGER x0, y0, scale;
+		KeplerPorts_Port ext;
+	} KeplerPorts_DisplayPortDesc;
+
+void KeplerPorts_DisplayPort_DrawCircle();
+void KeplerPorts_DisplayPort_DrawEllipse();
+void KeplerPorts_DisplayPort_DrawLine();
+void KeplerPorts_DisplayPort_DrawString();
+void KeplerPorts_DisplayPort_FillRect();
+
+typedef
+	struct KeplerPorts_PrinterPortDesc *KeplerPorts_PrinterPort;
+
+typedef
+	struct KeplerPorts_PrinterPortDesc {  
+		Display_Frame dsc, next;
+		INTEGER X, Y, W, H;
+		Display_Handler handle;
+		INTEGER x0, y0, scale;
+		KeplerPorts_Port ext;
+	} KeplerPorts_PrinterPortDesc;
+
+void KeplerPorts_PrinterPort_DrawCircle();
+void KeplerPorts_PrinterPort_DrawEllipse();
+void KeplerPorts_PrinterPort_DrawLine();
+void KeplerPorts_PrinterPort_DrawString();
+void KeplerPorts_PrinterPort_FillRect();
+
+
+
+long *KeplerPorts_PortDesc__typ;
+long *KeplerPorts_DisplayPortDesc__typ;
+long *KeplerPorts_PrinterPortDesc__typ;
+long *KeplerPorts_BalloonPortDesc__typ;
+static long *LineParms__14__typ;
+
+static void KeplerPorts_BlowUp();
+static void KeplerPorts_HairEllipse();
+void KeplerPorts_InitBalloon();
+static BOOLEAN KeplerPorts_Intersect();
+static void KeplerPorts_Line2();
+static void KeplerPorts_MinMax();
+INTEGER KeplerPorts_StringWidth();
+
+
+void KeplerPorts_Port_FillRect (P, x, y, w, h, col, pat, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y, w, h, col, pat, mode;
+{
+}
+
+void KeplerPorts_Port_DrawString (P, x, y, s, s__len, font, col, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y;
+	CHAR *s;
+	LONGINT s__len;
+	Fonts_Font font;
+	INTEGER col, mode;
+{
+	 s =(void*)memcpy(__builtin_alloca (   s__len *sizeof(  CHAR ) ) , s ,  s__len *sizeof(  CHAR )) ;
+	 ;
+}
+
+INTEGER KeplerPorts_Port_CX (P, x)
+	KeplerPorts_Port P;
+	INTEGER x;
+{
+	return P->X + (( P->x0 + x )>=0?( P->x0 + x )/(  P->scale ):-(((  P->scale )-1-( P->x0 + x ))/(  P->scale ))) ;
+}
+
+INTEGER KeplerPorts_Port_CY (P, y)
+	KeplerPorts_Port P;
+	INTEGER y;
+{
+	return (P->Y + P->H) + (( P->y0 + y )>=0?( P->y0 + y )/(  P->scale ):-(((  P->scale )-1-( P->y0 + y ))/(  P->scale ))) ;
+}
+
+INTEGER KeplerPorts_Port_Cx (P, X)
+	KeplerPorts_Port P;
+	INTEGER X;
+{
+	return (X - P->X) * P->scale - P->x0;
+}
+
+INTEGER KeplerPorts_Port_Cy (P, Y)
+	KeplerPorts_Port P;
+	INTEGER Y;
+{
+	return ((Y - P->Y) - P->H) * P->scale - P->y0;
+}
+
+void KeplerPorts_Port_DrawLine (P, x1, y1, x2, y2, col, mode)
+	KeplerPorts_Port P;
+	INTEGER x1, y1, x2, y2, col, mode;
+{
+	INTEGER x, y, dx, dy, d, inc, Xmin, Xmax, Ymin, Ymax;
+	x1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x1 )   ;
+	y1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y1 )   ;
+	x2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x2 )   ;
+	y2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y2 )   ;
+	if (x1 < x2) {
+		Xmin = x1;
+		Xmax = x2;
+	}
+	else {
+		Xmin = x2;
+		Xmax = x1;
+	}
+	if (y1 < y2) {
+		Ymin = y1;
+		Ymax = y2;
+	}
+	else {
+		Ymin = y2;
+		Ymax = y1;
+	}
+	if (y2 - y1 < x1 - x2) {
+		x = x1;
+		x1 = x2;
+		x2 = x;
+		y = y1;
+		y1 = y2;
+		y2 = y;
+	}
+	dx = ((long)( x2 - x1 )<<(  1 )) ;
+	dy = ((long)( y2 - y1 )<<(  1 )) ;
+	x = x1;
+	y = y1;
+	inc = 1;
+	if (dy > dx) {
+		d = ((long)( dy )>>(  1 )) ;
+		if (dx < 0) {
+			inc = -1;
+			dx = -dx;
+		}
+		while (y <= y2) {
+			((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   x )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   y )    ,   P->scale ,   P->scale ,   col ,   5 ,   mode )   ;
+			y += 1;
+			d -= dx;
+			if (d < 0) {
+				d += dy;
+				x += inc;
+			}
+		}
+	}
+	else {
+		d = ((long)( dx )>>(  1 )) ;
+		if (dy < 0) {
+			inc = -1;
+			dy = -dy;
+		}
+		while (x <= x2) {
+			((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   x )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   y )    ,   P->scale ,   P->scale ,   col ,   5 ,   mode )   ;
+			x += 1;
+			d -= dy;
+			if (d < 0) {
+				d += dx;
+				y += inc;
+			}
+		}
+	}
+}
+
+void KeplerPorts_Port_DrawRect (P, x, y, w, h, col, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y, w, h, col, mode;
+{
+	if (P->scale == 1) {
+		x -= 1;
+		y -= 1;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   y ,   w + 3 ,   3 ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x + w ,   y ,   3 ,   h + 3 ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   y + h ,   w + 3 ,   3 ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   y ,   3 ,   h + 3 ,   col ,   5 ,   mode )   ;
+	}
+	else {
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   y ,   w ,   P->scale ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   (x + w) - P->scale ,   y ,   P->scale ,   h ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   (y + h) - P->scale ,   w ,   P->scale ,   col ,   5 ,   mode )   ;
+		((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x ,   y ,   P->scale ,   h ,   col ,   5 ,   mode )   ;
+	}
+}
+
+static struct HairEllipse__41 {
+	KeplerPorts_Port *P;
+	struct HairEllipse__41 *lnk;
+} *HairEllipse__41_s;
+
+static void Dot4__42();
+
+static void Dot4__42 (x1, x2, y1, y2, col, mode)
+	INTEGER x1, x2, y1, y2, col, mode;
+{
+	((  void )(*( (*(((long**)(  *HairEllipse__41_s->P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( *HairEllipse__41_s->P ,   x1 ,   y1 ,   (*HairEllipse__41_s->P)->scale ,   (*HairEllipse__41_s->P)->scale ,   col ,   5 ,   mode )   ;
+	((  void )(*( (*(((long**)(  *HairEllipse__41_s->P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( *HairEllipse__41_s->P ,   x1 ,   y2 ,   (*HairEllipse__41_s->P)->scale ,   (*HairEllipse__41_s->P)->scale ,   col ,   5 ,   mode )   ;
+	((  void )(*( (*(((long**)(  *HairEllipse__41_s->P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( *HairEllipse__41_s->P ,   x2 ,   y1 ,   (*HairEllipse__41_s->P)->scale ,   (*HairEllipse__41_s->P)->scale ,   col ,   5 ,   mode )   ;
+	((  void )(*( (*(((long**)(  *HairEllipse__41_s->P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( *HairEllipse__41_s->P ,   x2 ,   y2 ,   (*HairEllipse__41_s->P)->scale ,   (*HairEllipse__41_s->P)->scale ,   col ,   5 ,   mode )   ;
+}
+
+static void KeplerPorts_HairEllipse (P, X, Y, A, B, col, mode)
+	KeplerPorts_Port P;
+	INTEGER X, Y, A, B, col, mode;
+{
+	INTEGER x, y;
+	LONGINT d, dx, dy, x2, y2, a, a2, a8, b, b2, b8;
+	struct HairEllipse__41 _s;
+	_s.P = &P;
+	_s.lnk = HairEllipse__41_s;
+	HairEllipse__41_s = &_s;
+	if (A == B) {
+		A -= 1;
+		x = A;
+		y = 0;
+		dx = ((long)( x - 1 )<<(  3 )) ;
+		dy = ((long)( y )<<(  3 ))  + 4;
+		d = 1 - ((long)( A )<<(  2 )) ;
+		while (x > y) {
+			Dot4__42(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   (X - x) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   X + x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   (Y - y) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   Y + y )   , col, mode);
+			Dot4__42(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   (X - y) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   X + y )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   (Y - x) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   Y + x )   , col, mode);
+			d += dy;
+			dy += 8;
+			y += 1;
+			if (d >= 0) {
+				d -= dx;
+				dx -= 8;
+				x -= 1;
+			}
+		}
+		if (x == y) {
+			Dot4__42(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   (X - x) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   X + x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   (Y - y) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   Y + y )   , col, mode);
+		}
+	}
+	else if (A > 0 && B > 0) {
+		A -= 1;
+		B -= 1;
+		a = A;
+		a2 = a * a;
+		a8 = ((long)( a2 )<<(  3 )) ;
+		b = B;
+		b2 = b * b;
+		b8 = ((long)( b2 )<<(  3 )) ;
+		x = A;
+		y = 0;
+		x2 = a * b2;
+		y2 = 0;
+		dx = b8 * (a - 1);
+		dy = ((long)( a2 )<<(  2 )) ;
+		d = b2 * (1 - ((long)( a )<<(  2 )) );
+		while (y2 < x2) {
+			Dot4__42(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   (X - x) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   X + x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   (Y - y) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   Y + y )   , col, mode);
+			d += dy;
+			dy += a8;
+			y += 1;
+			y2 += a2;
+			if (d >= 0) {
+				d -= dx;
+				dx -= b8;
+				x -= 1;
+				x2 -= b2;
+			}
+		}
+		d += (((long)( x2 + y2 )<<(  2 ))  - b2) + a2;
+		while (x >= 0) {
+			Dot4__42(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   (X - x) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   X + x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   (Y - y) - 1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   Y + y )   , col, mode);
+			d -= dx;
+			dx -= b8;
+			x -= 1;
+			if (d < 0) {
+				d += dy;
+				dy += a8;
+				y += 1;
+			}
+		}
+	}
+	HairEllipse__41_s = _s.lnk;
+}
+
+void KeplerPorts_Port_DrawEllipse (P, x, y, a, b, col, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y, a, b, col, mode;
+{
+	KeplerPorts_HairEllipse(P, ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , (( a )>=0?( a )/(  P->scale ):-(((  P->scale )-1-( a ))/(  P->scale ))) , (( b )>=0?( b )/(  P->scale ):-(((  P->scale )-1-( b ))/(  P->scale ))) , col, mode);
+}
+
+void KeplerPorts_Port_DrawCircle (P, x, y, r, col, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y, r, col, mode;
+{
+	KeplerPorts_HairEllipse(P, ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , (( r )>=0?( r )/(  P->scale ):-(((  P->scale )-1-( r ))/(  P->scale ))) , (( r )>=0?( r )/(  P->scale ):-(((  P->scale )-1-( r ))/(  P->scale ))) , col, mode);
+}
+
+static void KeplerPorts_Line2 (P, col, pat, mode, x1, x2, y1, y2)
+	KeplerPorts_Port P;
+	INTEGER col, pat, mode, x1, x2, y1, y2;
+{
+	x1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   x1 )   ;
+	x2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   x2 )   ;
+	y1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   y1 )   ;
+	y2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   y2 )   ;
+	((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x1 ,   y1 ,   x2 - x1 ,   P->scale ,   col ,   pat ,   mode )   ;
+	((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   x1 ,   y2 ,   x2 - x1 ,   P->scale ,   col ,   pat ,   mode )   ;
+}
+
+void KeplerPorts_Port_FillCircle (P, x, y, r, col, pat, mode)
+	KeplerPorts_Port P;
+	INTEGER x, y, r, col, pat, mode;
+{
+	INTEGER x1, y1, d, dx, dy;
+	x = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   ;
+	y = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   ;
+	r = (( r )>=0?( r )/(  P->scale ):-(((  P->scale )-1-( r ))/(  P->scale ))) ;
+	if (((P->X < x + r && x - r < P->X + P->W) && P->Y < y + r) && y - r < P->Y + P->H) {
+		x1 = r - 1;
+		y1 = 0;
+		dx = ((long)( x1 - 1 )<<(  3 )) ;
+		dy = ((long)( y1 )<<(  3 ))  + 4;
+		d = 3 - ((long)( r )<<(  2 )) ;
+		while (x1 > y1) {
+			KeplerPorts_Line2(P, col, pat, mode, (x - x1) - 1, x + x1, (y - y1) - 1, y + y1);
+			if (d + dy >= 0) {
+				KeplerPorts_Line2(P, col, pat, mode, (x - y1) - 1, x + y1, (y - x1) - 1, y + x1);
+			}
+			d += dy;
+			dy += 8;
+			y1 += 1;
+			if (d >= 0) {
+				d -= dx;
+				dx -= 8;
+				x1 -= 1;
+			}
+		}
+		if (x1 == y1) {
+			KeplerPorts_Line2(P, col, pat, mode, (x - x1) - 1, x + x1, (y - y1) - 1, y + y1);
+		}
+	}
+}
+
+typedef
+	struct LineParms__14 {
+		INTEGER x, y, d, dx, dy, inx, iny, drawX, drawY;
+	} LineParms__14;
+
+static struct FillQuad__11 {
+	struct FillQuad__11 *lnk;
+} *FillQuad__11_s;
+
+static void InitLineParms__12();
+static void LineStep__15();
+static LONGINT Max4__17();
+static LONGINT Min4__19();
+
+static void InitLineParms__12 (x1, y1, x2, y2, p, p__typ)
+	INTEGER x1, y1, x2, y2;
+	LineParms__14 *p;
+	long *p__typ;
+{
+	(*p).x = x1;
+	(*p).dx = x2 - x1;
+	if ((*p).dx > 0) {
+		(*p).inx = 1;
+	}
+	else if ((*p).dx < 0) {
+		(*p).inx = -1;
+		(*p).dx = -(*p).dx;
+	}
+	else {
+		(*p).inx = 0;
+	}
+	(*p).y = y1;
+	(*p).dy = y2 - y1;
+	if ((*p).dy > 0) {
+		(*p).iny = 1;
+	}
+	else if ((*p).dy < 0) {
+		(*p).iny = -1;
+		(*p).dy = -(*p).dy;
+	}
+	else {
+		(*p).iny = 0;
+	}
+	(*p).d = (*p).dy - (*p).dx;
+	(*p).dx = ((long)( (*p).dx )<<(  1 )) ;
+	(*p).dy = ((long)( (*p).dy )<<(  1 )) ;
+}
+
+static void LineStep__15 (p, p__typ)
+	LineParms__14 *p;
+	long *p__typ;
+{
+	while ((*p).d < 0) {
+		(*p).x += (*p).inx;
+		(*p).d += (*p).dy;
+	}
+	(*p).drawX = (*p).x;
+	(*p).drawY = ((long)( (*p).iny )>>(  1 ))  + (*p).y;
+	(*p).d -= (*p).dx;
+	(*p).y += (*p).iny;
+}
+
+static LONGINT Max4__17 (a, b, c, d)
+	LONGINT a, b, c, d;
+{
+	LONGINT m;
+	m = a;
+	if (b > m) {
+		m = b;
+	}
+	if (c > m) {
+		m = c;
+	}
+	if (d > m) {
+		m = d;
+	}
+	return m;
+}
+
+static LONGINT Min4__19 (a, b, c, d)
+	LONGINT a, b, c, d;
+{
+	LONGINT m;
+	m = a;
+	if (b < m) {
+		m = b;
+	}
+	if (c < m) {
+		m = c;
+	}
+	if (d < m) {
+		m = d;
+	}
+	return m;
+}
+
+void KeplerPorts_Port_FillQuad (P, x1, y1, x2, y2, x3, y3, x4, y4, col, pat, mode)
+	KeplerPorts_Port P;
+	INTEGER x1, y1, x2, y2, x3, y3, x4, y4, col, pat, mode;
+{
+	INTEGER x, y, RHS2, RHS3;
+	LineParms__14 left, right;
+	struct FillQuad__11 _s;
+	_s.lnk = FillQuad__11_s;
+	FillQuad__11_s = &_s;
+	x1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x1 )   ;
+	x2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x2 )   ;
+	x3 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x3 )   ;
+	x4 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x4 )   ;
+	y1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y1 )   ;
+	y2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y2 )   ;
+	y3 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y3 )   ;
+	y4 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y4 )   ;
+	if (((Max4__17((long)x1, (long)x2, (long)x3, (long)x4) >= (long)P->X && Min4__19((long)x1, (long)x2, (long)x3, (long)x4) <= (long)(P->X + P->W)) && Max4__17((long)y1, (long)y2, (long)y3, (long)y4) >= (long)P->Y) && Min4__19((long)y1, (long)y2, (long)y3, (long)y4) <= (long)(P->Y + P->H)) {
+		if (y1 > y2 || y1 == y2 && x1 > x2) {
+			x = x1;
+			x1 = x2;
+			x2 = x;
+			y = y1;
+			y1 = y2;
+			y2 = y;
+		}
+		if (y2 > y3 || y2 == y3 && x2 > x3) {
+			x = x2;
+			x2 = x3;
+			x3 = x;
+			y = y2;
+			y2 = y3;
+			y3 = y;
+		}
+		if (y3 > y4 || y3 == y4 && x3 > x4) {
+			x = x3;
+			x3 = x4;
+			x4 = x;
+			y = y3;
+			y3 = y4;
+			y4 = y;
+		}
+		if (y1 > y2 || y1 == y2 && x1 > x2) {
+			x = x1;
+			x1 = x2;
+			x2 = x;
+			y = y1;
+			y1 = y2;
+			y2 = y;
+		}
+		if (y2 > y3 || y2 == y3 && x2 > x3) {
+			x = x2;
+			x2 = x3;
+			x3 = x;
+			y = y2;
+			y2 = y3;
+			y3 = y;
+		}
+		if (y1 > y2 || y1 == y2 && x1 > x2) {
+			x = x1;
+			x1 = x2;
+			x2 = x;
+			y = y1;
+			y1 = y2;
+			y2 = y;
+		}
+		if ((long)(x2 - x1) * (long)(y4 - y1) > (long)(y2 - y1) * (long)(x4 - x1)) {
+			RHS2 = 2;
+		}
+		else {
+			RHS2 = 0;
+		}
+		if ((long)(x3 - x1) * (long)(y4 - y1) > (long)(y3 - y1) * (long)(x4 - x1)) {
+			RHS3 = 1;
+		}
+		else {
+			RHS3 = 0;
+		}
+		switch (RHS2 + RHS3) {
+			case 0: 
+				InitLineParms__12(x1, y1, x2, y2, &left, LineParms__14__typ);
+				InitLineParms__12(x1, y1, x4, y4, &right, LineParms__14__typ);
+				break;
+			case 1: 
+				InitLineParms__12(x1, y1, x2, y2, &left, LineParms__14__typ);
+				InitLineParms__12(x1, y1, x3, y3, &right, LineParms__14__typ);
+				break;
+			case 2: 
+				InitLineParms__12(x1, y1, x3, y3, &left, LineParms__14__typ);
+				InitLineParms__12(x1, y1, x2, y2, &right, LineParms__14__typ);
+				break;
+			case 3: 
+				InitLineParms__12(x1, y1, x4, y4, &left, LineParms__14__typ);
+				InitLineParms__12(x1, y1, x2, y2, &right, LineParms__14__typ);
+				break;
+			default: SYSTEM_HALT( -4 )  ;
+		}
+		while (left.y != y2) {
+			LineStep__15(&left, LineParms__14__typ);
+			LineStep__15(&right, LineParms__14__typ);
+			((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   left.drawY )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   right.drawX )    - ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   P->scale ,   col ,   pat ,   mode )   ;
+		}
+		switch (RHS2 + RHS3) {
+			case 0: 
+				InitLineParms__12(x2, y2, x3, y3, &left, LineParms__14__typ);
+				break;
+			case 1: 
+				InitLineParms__12(x2, y2, x4, y4, &left, LineParms__14__typ);
+				break;
+			case 2: 
+				InitLineParms__12(x2, y2, x4, y4, &right, LineParms__14__typ);
+				break;
+			case 3: 
+				InitLineParms__12(x2, y2, x3, y3, &right, LineParms__14__typ);
+				break;
+			default: SYSTEM_HALT( -4 )  ;
+		}
+		while (left.y != y3) {
+			LineStep__15(&left, LineParms__14__typ);
+			LineStep__15(&right, LineParms__14__typ);
+			((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   left.drawY )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   right.drawX )    - ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   P->scale ,   col ,   pat ,   mode )   ;
+		}
+		switch (RHS2 + RHS3) {
+			case 0: case 2: 
+				InitLineParms__12(x3, y3, x4, y4, &left, LineParms__14__typ);
+				break;
+			case 1: case 3: 
+				InitLineParms__12(x3, y3, x4, y4, &right, LineParms__14__typ);
+				break;
+			default: SYSTEM_HALT( -4 )  ;
+		}
+		while (left.y != y4) {
+			LineStep__15(&left, LineParms__14__typ);
+			LineStep__15(&right, LineParms__14__typ);
+			((  void )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  11 ))))  ( P ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  3 ))))  ( P ,   left.drawY )    ,   ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   right.drawX )    - ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  2 ))))  ( P ,   left.drawX )    ,   P->scale ,   col ,   pat ,   mode )   ;
+		}
+	}
+	FillQuad__11_s = _s.lnk;
+}
+
+void KeplerPorts_DisplayPort_DrawLine (P, x1, y1, x2, y2, col, mode)
+	KeplerPorts_DisplayPort P;
+	INTEGER x1, y1, x2, y2, col, mode;
+{
+	Display1_Line(P, col, ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y1 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x2 )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y2 )   , mode);
+}
+
+void KeplerPorts_DisplayPort_DrawCircle (P, x, y, r, col, mode)
+	KeplerPorts_DisplayPort P;
+	INTEGER x, y, r, col, mode;
+{
+	Display1_Circle(P, col, ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , (( r )>=0?( r )/(  P->scale ):-(((  P->scale )-1-( r ))/(  P->scale ))) , mode);
+}
+
+void KeplerPorts_DisplayPort_DrawEllipse (P, x, y, a, b, col, mode)
+	KeplerPorts_DisplayPort P;
+	INTEGER x, y, a, b, col, mode;
+{
+	Display1_Ellipse(P, col, ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , (( a )>=0?( a )/(  P->scale ):-(((  P->scale )-1-( a ))/(  P->scale ))) , (( b )>=0?( b )/(  P->scale ):-(((  P->scale )-1-( b ))/(  P->scale ))) , mode);
+}
+
+static BOOLEAN KeplerPorts_Intersect (F, X, Y, W, H)
+	KeplerPorts_Port F;
+	INTEGER *X, *Y, *W, *H;
+{
+	INTEGER t;
+	t = *X + *W;
+	if (F->X > *X) {
+		*X = F->X;
+	}
+	if (F->X + F->W < t) {
+		*W = (F->X + F->W) - *X;
+	}
+	else {
+		*W = t - *X;
+	}
+	if (*W <= 0) {
+		return 0;
+	}
+	t = *Y + *H;
+	if (F->Y > *Y) {
+		*Y = F->Y;
+	}
+	if (F->Y + F->H < t) {
+		*H = (F->Y + F->H) - *Y;
+	}
+	else {
+		*H = t - *Y;
+	}
+	return *H > 0;
+}
+
+void KeplerPorts_DisplayPort_DrawString (P, x, y, s, s__len, font, col, mode)
+	KeplerPorts_DisplayPort P;
+	INTEGER x, y;
+	CHAR *s;
+	LONGINT s__len;
+	Fonts_Font font;
+	INTEGER col, mode;
+{
+	CHAR ch;
+	LONGINT pat;
+	INTEGER X, i, dx, chx, chy, chw, chh, Y, oldX, oldY;
+	SHORTINT fno;
+	 s =(void*)memcpy(__builtin_alloca (   s__len *sizeof(  CHAR ) ) , s ,  s__len *sizeof(  CHAR )) ;
+	fno = TextPrinter_FontNo(font);
+	X = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   ;
+	y = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   ;
+	ch = s[0];
+	i = 0;
+	while (ch != 0x00) {
+		Display_GetChar(font->raster, ch, &dx, &chx, &chy, &chw, &chh, &pat);
+		Display_CopyPatternC(P, col, pat, X + chx, y + chy, mode);
+		x += (int)SYSTEM_DIV((long)( TextPrinter_DX(fno, ch) ),(long)(  3048 )) ;
+		X = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x + ((long)( P->scale )>>(  1 ))  )   ;
+		i += 1;
+		ch = s[(((unsigned)(long)( i )<(unsigned long)(  s__len ))? i :(SYSTEM_HALT( -2 ) ,0)) ];
+	}
+	 ;
+}
+
+void KeplerPorts_DisplayPort_FillRect (P, x, y, w, h, col, pat, mode)
+	KeplerPorts_DisplayPort P;
+	INTEGER x, y, w, h, col, pat, mode;
+{
+	INTEGER xp, yp;
+	x = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   ;
+	y = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   ;
+	w = (( w )>=0?( w )/(  P->scale ):-(((  P->scale )-1-( w ))/(  P->scale ))) ;
+	h = (( h )>=0?( h )/(  P->scale ):-(((  P->scale )-1-( h ))/(  P->scale ))) ;
+	xp = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   0 )   ;
+	yp = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   0 )   ;
+	if (pat == 5) {
+		Display_ReplConstC(P, col, x, y, w, h, mode);
+	}
+	else {
+		Display_ReplPatternC(P, col, Display1_ThisPattern(pat), x, y, w, h, xp, yp, mode);
+	}
+}
+
+void KeplerPorts_PrinterPort_DrawLine (P, x1, y1, x2, y2, col, mode)
+	KeplerPorts_PrinterPort P;
+	INTEGER x1, y1, x2, y2, col, mode;
+{
+	x1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x1 )   ;
+	y1 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y1 )   ;
+	x2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x2 )   ;
+	y2 = ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y2 )   ;
+	Printer_Line(x1, y1, x2, y2);
+}
+
+void KeplerPorts_PrinterPort_DrawCircle (P, x, y, r, col, mode)
+	KeplerPorts_PrinterPort P;
+	INTEGER x, y, r, col, mode;
+{
+	Printer_Circle(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , r);
+}
+
+void KeplerPorts_PrinterPort_DrawEllipse (P, x, y, a, b, col, mode)
+	KeplerPorts_PrinterPort P;
+	INTEGER x, y, a, b, col, mode;
+{
+	Printer_Ellipse(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , a, b);
+}
+
+void KeplerPorts_PrinterPort_DrawString (P, x, y, s, s__len, font, col, mode)
+	KeplerPorts_PrinterPort P;
+	INTEGER x, y;
+	CHAR *s;
+	LONGINT s__len;
+	Fonts_Font font;
+	INTEGER col, mode;
+{
+	 s =(void*)memcpy(__builtin_alloca (   s__len *sizeof(  CHAR ) ) , s ,  s__len *sizeof(  CHAR )) ;
+	Printer_String(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , s, s__len, font->name, 32);
+	 ;
+}
+
+void KeplerPorts_PrinterPort_FillRect (P, x, y, w, h, col, pat, mode)
+	KeplerPorts_PrinterPort P;
+	INTEGER x, y, w, h, col, pat, mode;
+{
+	if (pat == 5) {
+		Printer_ReplConst(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , w, h);
+	}
+	else {
+		Printer_ReplPattern(((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  0 ))))  ( P ,   x )   , ((  INTEGER )(*( (*(((long**)(  P  ))-1))  -(((16 +1) +24/sizeof(long)+5) +  1 ))))  ( P ,   y )   , w, h, pat);
+	}
+}
+
+static void KeplerPorts_MinMax (x, y, min, max)
+	INTEGER x, y, *min, *max;
+{
+	if (x < y) {
+		*min = x;
+		*max = y;
+	}
+	else {
+		*min = y;
+		*max = x;
+	}
+}
+
+static void KeplerPorts_BlowUp (P, x, y, w, h)
+	KeplerPorts_Port P;
+	INTEGER x, y, w, h;
+{
+	x = x + P->x0;
+	y = y + P->y0;
+	if (x < P->X) {
+		P->W = (P->W + P->X) - x;
+		P->X = x;
+	}
+	if (x + w > P->X + P->W) {
+		P->W = (x + w) - P->X;
+	}
+	if (y < P->Y) {
+		P->H = (P->H + P->Y) - y;
+		P->Y = y;
+	}
+	if (y + h > P->Y + P->H) {
+		P->H = (y + h) - P->Y;
+	}
+}
+
+void KeplerPorts_BalloonPort_DrawRect (P, x, y, w, h, col, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y, w, h, col, mode;
+{
+	KeplerPorts_Port_DrawRect(P, x, y, w, h, col, mode);
+}
+
+void KeplerPorts_BalloonPort_DrawLine (P, x1, y1, x2, y2, col, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x1, y1, x2, y2, col, mode;
+{
+	INTEGER minx, miny, maxx, maxy;
+	KeplerPorts_MinMax(x1, x2, &minx, &maxx);
+	KeplerPorts_MinMax(y1, y2, &miny, &maxy);
+	KeplerPorts_BlowUp(P, minx, miny, maxx - minx, maxy - miny);
+}
+
+void KeplerPorts_BalloonPort_DrawCircle (P, x, y, r, col, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y, r, col, mode;
+{
+	KeplerPorts_BlowUp(P, (x - r) - 4, (y - r) - 4, ((long)( r )<<(  1 ))  + 4, ((long)( r )<<(  1 ))  + 4);
+}
+
+void KeplerPorts_BalloonPort_DrawEllipse (P, x, y, a, b, col, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y, a, b, col, mode;
+{
+	KeplerPorts_BlowUp(P, (x - a) - 4, (y - b) - 4, ((long)( a )<<(  1 ))  + 4, ((long)( b )<<(  1 ))  + 4);
+}
+
+INTEGER KeplerPorts_StringWidth (s, s__len, f)
+	CHAR *s;
+	LONGINT s__len;
+	Fonts_Font f;
+{
+	SHORTINT fno;
+	CHAR ch;
+	INTEGER dx, w, i, sdx, sx, sy, sw, sh;
+	LONGINT p;
+	fno = TextPrinter_FontNo(f);
+	w = 0;
+	i = 0;
+	ch = s[0];
+	while (ch != 0x00) {
+		dx = (int)SYSTEM_DIV((long)( TextPrinter_DX(fno, ch) ),(long)(  3048 )) ;
+		w += dx;
+		i += 1;
+		ch = s[(((unsigned)(long)( i )<(unsigned long)(  s__len ))? i :(SYSTEM_HALT( -2 ) ,0)) ];
+	}
+	if (i > 0) {
+		Display_GetChar(f->raster, s[(((unsigned)(long)( i - 1 )<(unsigned long)(  s__len ))? i - 1 :(SYSTEM_HALT( -2 ) ,0)) ], &sdx, &sx, &sy, &sw, &sh, &p);
+		sdx = ((long)( sdx )<<(  2 )) ;
+		if (sdx > dx) {
+			w += sdx - dx;
+		}
+	}
+	return w;
+}
+
+void KeplerPorts_BalloonPort_DrawString (P, x, y, s, s__len, font, col, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y;
+	CHAR *s;
+	LONGINT s__len;
+	Fonts_Font font;
+	INTEGER col, mode;
+{
+	 s =(void*)memcpy(__builtin_alloca (   s__len *sizeof(  CHAR ) ) , s ,  s__len *sizeof(  CHAR )) ;
+	KeplerPorts_BlowUp(P, x, y + ((long)( font->minY )<<(  2 )) , KeplerPorts_StringWidth(s, s__len, font), ((long)( font->height )<<(  2 )) );
+	 ;
+}
+
+void KeplerPorts_BalloonPort_FillRect (P, x, y, w, h, col, pat, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y, w, h, col, pat, mode;
+{
+	KeplerPorts_BlowUp(P, x, y, w, h);
+}
+
+void KeplerPorts_BalloonPort_FillCircle (P, x, y, r, col, pat, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x, y, r, col, pat, mode;
+{
+	KeplerPorts_BlowUp(P, (x - r) - 4, (y - r) - 4, ((long)( r )<<(  1 ))  + 4, ((long)( r )<<(  1 ))  + 4);
+}
+
+void KeplerPorts_BalloonPort_FillQuad (P, x1, y1, x2, y2, x3, y3, x4, y4, col, pat, mode)
+	KeplerPorts_BalloonPort P;
+	INTEGER x1, y1, x2, y2, x3, y3, x4, y4, col, pat, mode;
+{
+	KeplerPorts_MinMax(x1, x2, &x1, &x2);
+	KeplerPorts_MinMax(x2, x3, &x2, &x3);
+	KeplerPorts_MinMax(x3, x4, &x3, &x4);
+	KeplerPorts_MinMax(x2, x3, &x2, &x3);
+	KeplerPorts_MinMax(x1, x2, &x1, &x2);
+	KeplerPorts_MinMax(y1, y2, &y1, &y2);
+	KeplerPorts_MinMax(y2, y3, &y2, &y3);
+	KeplerPorts_MinMax(y3, y4, &y3, &y4);
+	KeplerPorts_MinMax(y2, y3, &y2, &y3);
+	KeplerPorts_MinMax(y1, y2, &y1, &y2);
+	KeplerPorts_BlowUp(P, x1, y1, x4 - x1, y4 - y1);
+}
+
+void KeplerPorts_InitBalloon (P)
+	KeplerPorts_BalloonPort P;
+{
+	P->scale = 1;
+	P->X = 10000;
+	P->Y = 10000;
+	P->W = -20000;
+	P->H = -20000;
+}
+
+static struct  KeplerPorts_PortDesc__desc {	long tproc[  13 ]; long tag, next, level, module; char name[24]; long *base[16 ]; char *rsrvd; long blksz, ptr[  3 +1]; }  KeplerPorts_PortDesc__desc  = {{1 }, 1, 0, 0, 0,  "PortDesc" , {0}, 0,   32  , {0, 4, 28, -16}};
+static struct  KeplerPorts_DisplayPortDesc__desc {	long tproc[  13 ]; long tag, next, level, module; char name[24]; long *base[16 ]; char *rsrvd; long blksz, ptr[  3 +1]; }  KeplerPorts_DisplayPortDesc__desc  = {{1 }, 1, 0, 0, 0,  "DisplayPortDesc" , {0}, 0,   32  , {0, 4, 28, -16}};
+static struct  KeplerPorts_PrinterPortDesc__desc {	long tproc[  13 ]; long tag, next, level, module; char name[24]; long *base[16 ]; char *rsrvd; long blksz, ptr[  3 +1]; }  KeplerPorts_PrinterPortDesc__desc  = {{1 }, 1, 0, 0, 0,  "PrinterPortDesc" , {0}, 0,   32  , {0, 4, 28, -16}};
+static struct  KeplerPorts_BalloonPortDesc__desc {	long tproc[  13 ]; long tag, next, level, module; char name[24]; long *base[16 ]; char *rsrvd; long blksz, ptr[  3 +1]; }  KeplerPorts_BalloonPortDesc__desc  = {{1 }, 1, 0, 0, 0,  "BalloonPortDesc" , {0}, 0,   32  , {0, 4, 28, -16}};
+static struct  LineParms__14__desc {	long tproc[  1 ]; long tag, next, level, module; char name[24]; long *base[16 ]; char *rsrvd; long blksz, ptr[  0 +1]; }  LineParms__14__desc  = {{1 }, 1, 0, 0, 0,  "LineParms__14" , {0}, 0,   18  , {-4}};
+
+void *KeplerPorts__init()
+{
+	static void *m; if(m!=0)return m ;
+	SYSTEM_INCREF( Display__init()) ;
+	SYSTEM_INCREF( Display1__init()) ;
+	SYSTEM_INCREF( Fonts__init()) ;
+	SYSTEM_INCREF( Printer__init()) ;
+	SYSTEM_INCREF( TextPrinter__init()) ;
+	if(m==0)m=SYSTEM_REGMOD((CHAR*) "KeplerPorts" ,  0 ); else return m ;
+	 KeplerPorts_PortDesc__typ= & KeplerPorts_PortDesc__desc.blksz; memcpy( KeplerPorts_PortDesc__desc.base,   Display_FrameDesc__typ - (16 +1) ,   1 *sizeof(long));  KeplerPorts_PortDesc__desc.base[  1 ]= KeplerPorts_PortDesc__typ;  KeplerPorts_PortDesc__desc.module=(long)m; if( KeplerPorts_PortDesc__desc.blksz!=sizeof(struct  KeplerPorts_PortDesc )) SYSTEM_HALT( -15 ) ;  KeplerPorts_PortDesc__desc.blksz=( KeplerPorts_PortDesc__desc.blksz+5*sizeof(long)-1)/(4*sizeof(long))*(4*sizeof(long)); SYSTEM_REGTYP(m, (long)& KeplerPorts_PortDesc__desc.next); SYSTEM_INHERIT( KeplerPorts_PortDesc__typ,   Display_FrameDesc__typ) ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  0 ))=(long)  KeplerPorts_Port_CX  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  1 ))=(long)  KeplerPorts_Port_CY  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  2 ))=(long)  KeplerPorts_Port_Cx  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  3 ))=(long)  KeplerPorts_Port_Cy  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  4 ))=(long)  KeplerPorts_Port_DrawCircle  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  5 ))=(long)  KeplerPorts_Port_DrawEllipse  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  6 ))=(long)  KeplerPorts_Port_DrawLine  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  7 ))=(long)  KeplerPorts_Port_DrawRect  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  8 ))=(long)  KeplerPorts_Port_DrawString  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  9 ))=(long)  KeplerPorts_Port_FillCircle  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  10 ))=(long)  KeplerPorts_Port_FillQuad  ;
+	*( KeplerPorts_PortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  11 ))=(long)  KeplerPorts_Port_FillRect  ;
+	 KeplerPorts_DisplayPortDesc__typ= & KeplerPorts_DisplayPortDesc__desc.blksz; memcpy( KeplerPorts_DisplayPortDesc__desc.base,   KeplerPorts_PortDesc__typ - (16 +1) ,   2 *sizeof(long));  KeplerPorts_DisplayPortDesc__desc.base[  2 ]= KeplerPorts_DisplayPortDesc__typ;  KeplerPorts_DisplayPortDesc__desc.module=(long)m; if( KeplerPorts_DisplayPortDesc__desc.blksz!=sizeof(struct  KeplerPorts_DisplayPortDesc )) SYSTEM_HALT( -15 ) ;  KeplerPorts_DisplayPortDesc__desc.blksz=( KeplerPorts_DisplayPortDesc__desc.blksz+5*sizeof(long)-1)/(4*sizeof(long))*(4*sizeof(long)); SYSTEM_REGTYP(m, (long)& KeplerPorts_DisplayPortDesc__desc.next); SYSTEM_INHERIT( KeplerPorts_DisplayPortDesc__typ,   KeplerPorts_PortDesc__typ) ;
+	*( KeplerPorts_DisplayPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  4 ))=(long)  KeplerPorts_DisplayPort_DrawCircle  ;
+	*( KeplerPorts_DisplayPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  5 ))=(long)  KeplerPorts_DisplayPort_DrawEllipse  ;
+	*( KeplerPorts_DisplayPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  6 ))=(long)  KeplerPorts_DisplayPort_DrawLine  ;
+	*( KeplerPorts_DisplayPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  8 ))=(long)  KeplerPorts_DisplayPort_DrawString  ;
+	*( KeplerPorts_DisplayPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  11 ))=(long)  KeplerPorts_DisplayPort_FillRect  ;
+	 KeplerPorts_PrinterPortDesc__typ= & KeplerPorts_PrinterPortDesc__desc.blksz; memcpy( KeplerPorts_PrinterPortDesc__desc.base,   KeplerPorts_PortDesc__typ - (16 +1) ,   2 *sizeof(long));  KeplerPorts_PrinterPortDesc__desc.base[  2 ]= KeplerPorts_PrinterPortDesc__typ;  KeplerPorts_PrinterPortDesc__desc.module=(long)m; if( KeplerPorts_PrinterPortDesc__desc.blksz!=sizeof(struct  KeplerPorts_PrinterPortDesc )) SYSTEM_HALT( -15 ) ;  KeplerPorts_PrinterPortDesc__desc.blksz=( KeplerPorts_PrinterPortDesc__desc.blksz+5*sizeof(long)-1)/(4*sizeof(long))*(4*sizeof(long)); SYSTEM_REGTYP(m, (long)& KeplerPorts_PrinterPortDesc__desc.next); SYSTEM_INHERIT( KeplerPorts_PrinterPortDesc__typ,   KeplerPorts_PortDesc__typ) ;
+	*( KeplerPorts_PrinterPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  4 ))=(long)  KeplerPorts_PrinterPort_DrawCircle  ;
+	*( KeplerPorts_PrinterPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  5 ))=(long)  KeplerPorts_PrinterPort_DrawEllipse  ;
+	*( KeplerPorts_PrinterPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  6 ))=(long)  KeplerPorts_PrinterPort_DrawLine  ;
+	*( KeplerPorts_PrinterPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  8 ))=(long)  KeplerPorts_PrinterPort_DrawString  ;
+	*( KeplerPorts_PrinterPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  11 ))=(long)  KeplerPorts_PrinterPort_FillRect  ;
+	 KeplerPorts_BalloonPortDesc__typ= & KeplerPorts_BalloonPortDesc__desc.blksz; memcpy( KeplerPorts_BalloonPortDesc__desc.base,   KeplerPorts_PortDesc__typ - (16 +1) ,   2 *sizeof(long));  KeplerPorts_BalloonPortDesc__desc.base[  2 ]= KeplerPorts_BalloonPortDesc__typ;  KeplerPorts_BalloonPortDesc__desc.module=(long)m; if( KeplerPorts_BalloonPortDesc__desc.blksz!=sizeof(struct  KeplerPorts_BalloonPortDesc )) SYSTEM_HALT( -15 ) ;  KeplerPorts_BalloonPortDesc__desc.blksz=( KeplerPorts_BalloonPortDesc__desc.blksz+5*sizeof(long)-1)/(4*sizeof(long))*(4*sizeof(long)); SYSTEM_REGTYP(m, (long)& KeplerPorts_BalloonPortDesc__desc.next); SYSTEM_INHERIT( KeplerPorts_BalloonPortDesc__typ,   KeplerPorts_PortDesc__typ) ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  4 ))=(long)  KeplerPorts_BalloonPort_DrawCircle  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  5 ))=(long)  KeplerPorts_BalloonPort_DrawEllipse  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  6 ))=(long)  KeplerPorts_BalloonPort_DrawLine  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  7 ))=(long)  KeplerPorts_BalloonPort_DrawRect  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  8 ))=(long)  KeplerPorts_BalloonPort_DrawString  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  9 ))=(long)  KeplerPorts_BalloonPort_FillCircle  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  10 ))=(long)  KeplerPorts_BalloonPort_FillQuad  ;
+	*( KeplerPorts_BalloonPortDesc__typ-(((16 +1) +24/sizeof(long)+5) +  11 ))=(long)  KeplerPorts_BalloonPort_FillRect  ;
+	 LineParms__14__typ= & LineParms__14__desc.blksz; memcpy( LineParms__14__desc.base,   LineParms__14__typ - (16 +1) ,   0 *sizeof(long));  LineParms__14__desc.base[  0 ]= LineParms__14__typ;  LineParms__14__desc.module=(long)m; if( LineParms__14__desc.blksz!=sizeof(struct  LineParms__14 )) SYSTEM_HALT( -15 ) ;  LineParms__14__desc.blksz=( LineParms__14__desc.blksz+5*sizeof(long)-1)/(4*sizeof(long))*(4*sizeof(long)); SYSTEM_REGTYP(m, (long)& LineParms__14__desc.next); SYSTEM_INHERIT( LineParms__14__typ,   LineParms__14__typ) ;
+ 
+	return m ;
+}

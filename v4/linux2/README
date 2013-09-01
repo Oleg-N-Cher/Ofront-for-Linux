@@ -1,0 +1,6 @@
+Tested for Knoppix 5.1.1 Linux distribution
+(based on Debian etch/testing, Jan 4th, 2007).
+Uses libc.so.6, libm.so.6, libX11.so.6.
+
+Builds product version only.
+
