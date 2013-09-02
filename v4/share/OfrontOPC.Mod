@@ -454,6 +454,7 @@ MODULE OfrontOPC;	(* copyright (c) J. Templ 12.7.95 / 3.7.96 *)
 					OPM.WriteString("__TYPEOF("); Ident(obj^.link); OPM.Write(")")
 				ELSE Ident(obj^.link); OPM.WriteString(TagExt)
 				END ;
+				OPM.WriteString(", "); Ident(obj);
 				Str1(", #, ", obj^.adr DIV 10000H);
 				IF obj^.typ = OPT.notyp THEN OPM.WriteString(VoidType) ELSE Ident(obj^.typ^.strobj) END ;
 				OPM.WriteString("(*)");
