@@ -575,7 +575,7 @@ MODULE OfrontOPC;	(* copyright (c) J. Templ 12.7.95 / 3.7.96 *)
 			o: OPT.Object;
 	BEGIN
 		BegStat; OPM.WriteString("__TDESC("); 
-		Andent(typ);
+		Andent(typ); OPM.WriteString("__desc");
 		Str1(", #", typ^.n + 1); Str1(", #) = {__TDFLDS(", NofPtrs(typ));
 		OPM.Write('"');
 		IF typ^.strobj # NIL THEN OPM.WriteStringVar(typ^.strobj^.name) END ;
@@ -902,7 +902,7 @@ MODULE OfrontOPC;	(* copyright (c) J. Templ 12.7.95 / 3.7.96 *)
 			InitImports(obj^.left);
 			IF (obj^.mode = Mod) & (obj^.mnolev # 0) THEN
 				BegStat; OPM.WriteString("__IMPORT(");
-				OPM.WriteStringVar(OPT.GlbMod[-obj^.mnolev].name); 
+				OPM.WriteStringVar(OPT.GlbMod[-obj^.mnolev].name); OPM.WriteString("__init");
 				OPM.Write(CloseParen); EndStat
 			END ;
 			InitImports(obj^.right)
