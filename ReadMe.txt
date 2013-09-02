@@ -63,6 +63,7 @@ Differences from the original ver. from Josef Templ, Software Templ OG
 Vers. from VEDAsoft uses the same distro name with suffix '+':
 
   ofront-1.2-linux2+.tar.gz
+  ofront+.tar.gz
 
 
 --
