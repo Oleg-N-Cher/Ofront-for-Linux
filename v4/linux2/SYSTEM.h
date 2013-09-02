@@ -73,7 +73,7 @@ extern void SYSTEM_ENUMR();
 #define __INIT(argc, argv)	static void *m; SYSTEM_INIT(argc, (long)&argv);
 #define __REGMAIN(name, enum)	m=SYSTEM_REGMOD(name,enum)
 #define __FINI	SYSTEM_FINI(); return 0
-#define __IMPORT(name)	SYSTEM_INCREF(name##__init())
+#define __IMPORT(name__init)	SYSTEM_INCREF(name__init())
 #define __REGCMD(name, cmd)	SYSTEM_REGCMD(m, name, cmd)
 
 /* SYSTEM ops */
@@ -148,15 +148,15 @@ static int __STRCMP(x, y)
 #define __RF(i, ub)	SYSTEM_RCHK((long)(i),(long)(ub))
 
 /* record type descriptors */
-#define __TDESC(t, m, n) \
-	static struct t##__desc {\
+#define __TDESC(t__desc, m, n) \
+	static struct t__desc {\
 		long tproc[m]; \
 		long tag, next, level, module; \
 		char name[24]; \
 		long *base[__MAXEXT]; \
 		char *rsrvd; \
 		long blksz, ptr[n+1]; \
-	} t##__desc
+	} t__desc
 
 #define __BASEOFF	(__MAXEXT+1)
 #define __TPROC0OFF	(__BASEOFF+24/sizeof(long)+5)
@@ -177,7 +177,7 @@ static int __STRCMP(x, y)
 
 /* Oberon-2 type bound procedures support */
 #define __INITBP(t, proc, num)	*(t##__typ-(__TPROC0OFF+num))=(long)proc
-#define __SEND(typ, num, funtyp, parlist)	((funtyp)(*(typ-(__TPROC0OFF+num))))parlist
+#define __SEND(typ, procname, num, funtyp, parlist)	((funtyp)(*(typ-(__TPROC0OFF+num))))parlist
 
 /* runtime system variables */
 extern LONGINT SYSTEM_argc;
