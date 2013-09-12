@@ -2,6 +2,9 @@ Ofront for Linux
 ================
 
 It's Ofront for Linux modified by VEDAsoft Oberon Club.
+
+  http://zx.oberon2.ru
+
 In our work we need some features, and have added easily.
 
 The project lives at:
@@ -64,15 +67,31 @@ Differences from the original ver. from Josef Templ, Software Templ OG
 
 - Add possibility of static linking to typebound procedures (a procedure name
   as additional parameter in macro __SEND (in 'SYSTEM.h')).
+  It allows to use typebound procedures without having a tree of extra meta-information.
+  This possibility isn't used in Ofront itself, but it's useful to build very compact
+  binaries without extra meta-information and independent from Oberon-environment
+  (for example of using the feature - see XDev at https://github.com/Oleg-N-Cher/BB-XDev/ ).
+
+  Was:
+    #define __SEND(typ, num, funtyp, parlist)	((funtyp)(*(typ-(__TPROC0OFF+num))))parlist
+
+  Now (Ofront-like usage):
+    #define __SEND(typ, procname, num, funtyp, parlist)	((funtyp)(*(typ-(__TPROC0OFF+num))))parlist
+
+  Now (XDev-like usage):
+    #define __SEND(typ, procname, num, funtyp, parlist) procname parlist
 
 
 - Allow the SHORTINT type to has the size of 2 bytes (set this in Ofront.par).
 
 
-Vers. from VEDAsoft uses the same distro name with suffix '+':
+Vers. from VEDAsoft uses the same distro name with suffix '+'.
 
-  ofront-1.2-linux2+.tar.gz
-  ofront+.tar.gz
+  Binary distribution: ofront-1.2-linux2+.tar.gz
+  https://github.com/Oleg-N-Cher/Ofront/blob/master/Arch/Ofront%20for%20Linux/ofront-1.2-linux2%2B.tar.gz?raw=true
+
+  Source code: ofront+.tar.gz
+  https://github.com/Oleg-N-Cher/Ofront/blob/master/Arch/Ofront%20for%20Linux/ofront%2B.tar.gz?raw=true
 
 
 --
