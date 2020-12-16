@@ -51,7 +51,7 @@ http://zx.oberon2.ru/forum/viewtopic.php?f=32&t=133
 Probably a good next step is porting Ofront for ARM architectures.
 Is it simple? I don't know. Is it possible? Sure. Someone wants to help me?
 
-http://norayr.am/weblog/2010/02/15/erzahlung-uber-einfach-portieren/
+[A Story about simple Porting](http://norayr.am/weblog/2010/02/15/erzahlung-uber-einfach-portieren/)
 
 I also have experience with the Ofront for BlackBox (I made some useful
 modifications and improvements of it). And I see no problems to adapt Ofront
